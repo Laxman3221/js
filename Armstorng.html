@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var arm=parseInt(prompt("enter the number"));
+    var copy=arm;sum=0;
+    count=0;
+    while(arm!=0){
+        arm=parseInt(arm/10);
+        count=count+1;
+    }
+    arm=copy;
+    while(arm!=0){
+        rem=arm%10;
+        arm=parseInt(arm/10);
+        sum=sum+(rem**count);
+    }
+
+    if(sum==copy){
+        document.write("it is a armstrong number");
+    }
+    else{
+        document.write("it is a armstrong  not number"); 
+    }
+    </script>
+</body>
+</html>

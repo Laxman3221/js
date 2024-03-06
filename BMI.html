@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var weight=parseInt(prompt("enter ur weight"));
+        var height=parseInt(prompt("enter the height"));
+       BMI=weight/(height*height);
+        result=BMI*10000;
+        document.write(`${result}<br>`);
+       if((result>=18.4) &&(result<=24.4)){
+        document.write("user is healthy");
+       }
+       else if(result<18.4){
+        document.write("user  must increase the weight");
+       }
+       else if(result>=24.5){
+        document.write("user must decrease the weight");
+       }
+    </script>
+</body>
+</html>

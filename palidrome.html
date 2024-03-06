@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    var n=(prompt("enter the number"));
+    var copy=n;
+    var sum="";
+    while(n!=0){
+        rem=n%10;
+        sum=sum+rem;
+        n=parseInt(n/10);
+    }
+    if(copy==sum){
+        document.write("Given number is a palidrome")
+    }
+    else{
+        document.write("Given number is not a palidrome")
+    }
+   </script> 
+</body>
+</html>
